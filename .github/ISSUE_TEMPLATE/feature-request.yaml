@@ -1,0 +1,27 @@
+name: Feature Request
+description: Request a new feature in Stashh
+labels: ["enhancement","needs-triage"]
+title: "[Request]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ℹ You can capture screenshots on...
+        - [Windows](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) by pressing `Window-key + Shift + S`.
+        - [Mac](https://www.cnet.com/tech/computing/how-to-take-a-screenshot-on-your-mac-4-ways-to-capture-your-screen/) by pressing `Shift + Command + 5`.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please describe the desired feature
+      placeholder:
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Please explain why this feature is needed
+      placeholder:
+    validations:
+      required: true

@@ -1,0 +1,81 @@
+name: Bug Report
+description: Report a bug in Stashh
+labels: ["bug","needs-triage"]
+title: "[Issue]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ℹ You can capture screenshots on...
+        - [Windows](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) by pressing `Window-key + Shift + S`.
+        - [Mac](https://www.cnet.com/tech/computing/how-to-take-a-screenshot-on-your-mac-4-ways-to-capture-your-screen/) by pressing `Shift + Command + 5`.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Reproduction Steps
+      description: |
+        Please write a detailed step by step account of what you did to make the bug happen, with screenshots if possible.
+      placeholder: |
+        1. Click on something
+        2. Click somewhere else
+        3. Popup appears
+    validations:
+      required: true
+  - type: textarea
+    id: bug-behaviour
+    attributes:
+      label: Issue
+      description: |
+        Please describe the problem you encountered, with screenshots if possible
+      placeholder: An error message was shown and I could not click the button
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What were you expecting to happen?
+      placeholder: Clicking the button should have added a new column
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error/Exception
+      description: Please paste any errors or relevant console logs here. This will be automatically formatted, so no need for backticks.
+      render: text
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      description: Are you able to make this happen over and over?
+      options:
+        - Yes, every time
+        - Sometimes
+        - No, I could only make it happen once
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: What browser were you using?
+      options:
+        - Chrome
+        - Brave
+        - Safari
+        - Firefox
+        - Edge
+        - Internet Explorer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: If you have any other comments please provide them here
+      placeholder: |
+        It would be better if a message was shown the next time this happens
+    validations:
+      required: false
