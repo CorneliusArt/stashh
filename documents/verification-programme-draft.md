@@ -15,8 +15,6 @@ To request verification a collection must either be…
   - $15,000 cumulative sales volume on Stashh
   - 150 NFTs cumulative sales volume on Stashh
 
-For example, an esports team could create a collection for their team and request verification under 1.a.i or 1.a.ii.
-
 ## Criteria
 
 In order to pass verification the collection must pass each of the following stages
