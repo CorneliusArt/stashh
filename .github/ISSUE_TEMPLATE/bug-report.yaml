@@ -33,7 +33,7 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
-      label: Expected Behavior
+      label: Expected behaviour
       description: What were you expecting to happen?
       placeholder: Clicking the button should have added a new column
     validations:
@@ -53,6 +53,17 @@ body:
         - Yes, every time
         - Sometimes
         - No, I could only make it happen once
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Which environment did you encouner this issue on?
+      options:
+        - Mainnet (stashh.io)
+        - Testnet (testnet.stashh.io)
+        - Unsure
     validations:
       required: true
   - type: dropdown
